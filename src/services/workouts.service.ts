@@ -20,7 +20,6 @@ export const workoutsService = {
     }
 
     workoutsMock.push(newWorkout)
-
     return newWorkout
   },
 }

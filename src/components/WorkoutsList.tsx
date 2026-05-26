@@ -1,7 +1,7 @@
-import { useWorkouts } from '../features/workouts/hooks/useWorkouts'
+import { useGetWorkouts } from '../features/workouts/hooks/useGetWorkouts'
 
 export function WorkoutsList(){
-  const { isLoading, isError, data } = useWorkouts()
+  const { isLoading, isError, data } = useGetWorkouts()
 
   if (isLoading) return <p>Cargando...</p>
   if (isError) return <p>Ha habido un error 🙅🏼...</p>
